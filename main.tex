@@ -1,0 +1,276 @@
+%-------------------------
+% Resume in Latex (Revised for Icons, Colors, and Line Wrapping)
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage[T1]{fontenc}
+\usepackage{kotex}
+
+
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+\raggedright
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-2pt}]
+
+%-------------------------------------------
+%%%%%% DEFINE PERSONAL INFO %%%%%%%
+\newcommand{\name}{Daehee Park}
+
+% left column
+\newcommand{\position}{Assistant Professor}
+\newcommand{\affiliation}{Daegu Gyeongbuk Institute of Science and Technology (DGIST)}
+\newcommand{\deptone}{Department of Electrical Engineering and Computer Science}
+\newcommand{\depttwo}{Department of Interdisciplinary AI}
+
+% right column
+\newcommand{\phone}{+82-10-3290-2155}
+\newcommand{\emaila}{dhpark@dgist.ac.kr}
+\newcommand{\gscholar}{https://scholar.google.com/citations?user=XXXXXXX} % 실제 ID로 수정
+\newcommand{\linkedin}{https://www.linkedin.com/in/your-profile}           % 실제 링크로 수정
+
+\begin{document}
+
+%-------------------------------------------
+% HEADING
+%-------------------------------------------
+\noindent
+% --- PHOTO ---
+\begin{minipage}[c]{2.4cm}
+    \includegraphics[width=2.3cm]{photo.png}
+\end{minipage}
+\hspace{2mm}
+% --- NAME / AFFILIATION / CONTACTS ---
+\begin{minipage}[c]{\dimexpr\linewidth-2.4cm-6mm\relax}
+\vspace{5pt}
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+
+% Row 1: Name / Phone
+\textbf{\Large Daehee Park} &
+{\footnotesize \faPhone\ +82-10-3290-2155} \\[1mm]
+
+% Row 2: Position / Email
+Assistant Professor &
+{\footnotesize \faEnvelope\ \href{mailto:dhpark@dgist.ac.kr}{dhpark@dgist.ac.kr}} \\
+
+% Row 3: Institution / Google Scholar
+Daegu Gyeongbuk Institute of Science and Technology (DGIST) &
+{\footnotesize \faGraduationCap\ \href{https://scholar.google.com/citations?user=XXXXXXX}{Google Scholar}} \\
+
+% Row 4: Department 1 / Personal Website
+Department of Electrical Engineering and Computer Science &
+{\footnotesize \faGlobe\ \href{https://sites.google.com/view/dhpark/}{Personal Website}} \\
+
+% Row 5: Department 2 / ISL Lab Website  ← 이 줄이 서로 같은 높이
+Department of Interdisciplinary AI &
+{\footnotesize \faGlobe\ \href{https://sites.google.com/view/isllab-dgist/}{ISL Lab Website}} \\
+
+\end{tabularx}
+\end{minipage}
+
+% heading 아래 여백 (섹션과 안 겹치게)
+\vspace{1mm}
+
+%-------------------------------------------
+% RESEARCH INTERESTS
+%-------------------------------------------
+\section{\faFlask\ Research Interests}
+\begin{itemize}[leftmargin=0.3cm]
+    \item \textbf{Multi-modal learning}: Multi-modal deep learning integrating visual, linguistic, and motion information.
+    % \item \textbf{Motion forecasting}: Predicting future motion of various agents under interacting systems and its applications.
+    \item \textbf{AI-driven decision making}: Models integrating perception, prediction, and planning for autonomous decisions.
+    \item \textbf{Computer vision}: Detection, tracking, and segmentation for autonomous systems.
+\end{itemize}
+
+%-------------------------------------------
+% WORK EXPERIENCE
+%-------------------------------------------
+\section{\faBriefcase\ Work Experience}
+\begin{itemize}[leftmargin=0.25cm]
+
+\item \textbf{DGIST} \hfill 2025.03 -- Present \\
+Assistant Professor, Daegu, Korea
+
+\item \textbf{Qualcomm} \hfill 2024.04 -- 2024.09 \\
+Deep Learning R\&D Intern, San Diego (Remote), US
+
+\item \textbf{Naver Labs} \hfill 2021.06 -- 2021.08 \\
+Research Intern, Seongnam, Korea
+
+\end{itemize}
+
+%-------------------------------------------
+% EDUCATION
+%-------------------------------------------
+\section{\faUniversity\ Education}
+\begin{itemize}[leftmargin=0.25cm]
+
+\item \textbf{KAIST}, Daejeon, Korea \hfill 2020.03 -- 2025.02\\
+Ph.D. in Mechanical Engineering \\
+Thesis: \textit{Data-driven Trajectory Prediction for Reliable Autonomous Driving Systems} \\
+Advisor: Kuk-Jin Yoon
+
+\item \textbf{KAIST}, Daejeon, Korea \hfill 2018.03 -- 2020.02\\
+M.S. in Mechanical Engineering \\
+Thesis: \textit{Removal of Reflected Virtual Images in Visual Recognition Utilizing 3D Depth Information}
+
+\item \textbf{KAIST}, Daejeon, Korea \hfill 2013.03 -- 2018.02\\
+B.S. in Mechanical Engineering \\
+Double Major in Business and Technology Management
+
+\end{itemize}
+
+%-------------------------------------------
+% PUBLICATIONS
+%-------------------------------------------
+\section{\faBook\ Publications}
+\begin{itemize}[leftmargin=0.25cm]
+
+\item \textbf{[c13]} \textcolor{blue}{Generative Active Learning for Long-tail Trajectory Prediction via Controllable Diffusion Model}.\\
+\textbf{Daehee Park}, Monu Surana, Pranav Desai, Ashish Mehta, Reuben M. V. John, Kuk-Jin Yoon.\\
+\textit{IEEE/CVF International Conference on Computer Vision (ICCV)}, 2025.
+
+\item \textbf{[c12]} \textcolor{blue}{Interaction-Merged Motion Planning: Effectively Leveraging Diverse Motion Datasets for Robust Planning}.\\
+Giwon Lee*, Wooseong Jeong*, \textbf{Daehee Park}, Jaewoo Jeong, Kuk-Jin Yoon.\\
+\textit{IEEE/CVF International Conference on Computer Vision (ICCV)}, 2025. \textcolor{red}{(Highlight)} 
+
+\item \textbf{[c11]} \textcolor{blue}{Denoising Diffusion Policy Optimization for Diffusion-based Motion Planning}.\\
+Giwon Lee*, \textbf{Daehee Park*}, Jaewoo Jeong*, Kuk-Jin Yoon.\\
+\textit{IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 2025.
+
+\item \textbf{[p1]} \textcolor{blue}{Self-Supervised 3D Occupancy Prediction with Temporal Consistency}.\\
+Jae-Seok Jeong, Sung-Hoon Yoon, \textbf{Daehee Park}, Kuk-Jin Yoon.\\
+\textit{arXiv preprint}, 2025.
+
+\item \textbf{[c10]} \textcolor{blue}{Multi-modal Knowledge Distillation-based Human Trajectory Forecasting}.\\
+Jaewoo Jeong, SeoHee Lee, \textbf{Daehee Park}, Giwon Lee, Kuk-Jin Yoon.\\
+\textit{IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, 2025.
+
+\item \textbf{[c9]} \textcolor{blue}{Diffusion-Guided Weakly Supervised Semantic Segmentation}.\\
+Sung-Hoon Yoon, Hoyong Kwon*, Jaeseok Jeong*, \textbf{Daehee Park}, Kuk-Jin Yoon.\\
+\textit{European Conference on Computer Vision (ECCV)}, 2024.
+
+\item \textbf{[c8]} \textcolor{blue}{T4P: Test-Time Training of Trajectory Prediction via Masked Autoencoder and Actor-specific Token Memory}.\\
+\textbf{Daehee Park}, Jae-Seok Jeong, Sung-Hoon Yoon, Jaewoo Jeong, Kuk-Jin Yoon.\\
+\textit{IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, 2024.
+
+\item \textbf{[c7]} \textcolor{blue}{Multi-agent Long-term 3D Human Pose Forecasting via Interaction-aware Trajectory Conditioning}.\\
+Jaewoo Jeong*, \textbf{Daehee Park*}, Kuk-Jin Yoon.\\
+\textit{IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)}, 2024. \textcolor{red}{(Highlight)} 
+
+\item \textbf{[c6]} \textcolor{blue}{Improving Transferability for Cross-domain Trajectory Prediction via Neural Stochastic Differential Equation}.\\
+\textbf{Daehee Park}, Jaewoo Jeong, Kuk-Jin Yoon.\\
+\textit{AAAI Conference on Artificial Intelligence (AAAI)}, 2024.
+
+\item \textbf{[c5]} \textcolor{blue}{Leveraging Future Relationship Reasoning for Vehicle Trajectory Prediction}.\\
+\textbf{Daehee Park}, Hobin Ryu, Yunseo Yang, Jegyeong Cho, Jiwon Kim, Kuk-Jin Yoon.\\
+\textit{International Conference on Learning Representations (ICLR)}, 2023.
+
+\item \textbf{[c4]} \textcolor{blue}{BIPS: Bi-modal Indoor Panorama Synthesis via Residual Depth-Aided Adversarial Learning}.\\
+Changgyoon Oh*, Wonjune Cho*, Yujeong Chae*, \textbf{Daehee Park*}, Lin Wang, Kuk-Jin Yoon.\\
+\textit{European Conference on Computer Vision (ECCV)}, 2022.
+
+\item \textbf{[c3]} \textcolor{blue}{Unlocking the Potential of Ordinary Classifier: Class-specific Adversarial Erasing Framework for Weakly Supervised Semantic Segmentation}.\\
+Hyeokjun Kweon*, Sung-Hoon Yoon*, Hyeonseong Kim, \textbf{Daehee Park}, Kuk-Jin Yoon.\\
+\textit{IEEE/CVF International Conference on Computer Vision (ICCV)}, 2021.
+
+\item \textbf{[j1, c2]} \textcolor{blue}{Identifying Reflected Images from Object Detector in Indoor Environment Utilizing Depth Information}.\\
+\textbf{Daehee Park}, Yong-Hwa Park.\\
+\textit{IEEE Robotics and Automation Letters (RA-L) and IEEE International Conference on Robotics and Automation (ICRA)}, 2020.
+
+\item \textbf{[c1]} \textcolor{blue}{A Scanning 3D Sensor and Its Object Recognition for Autonomous Robots}.\\
+Joon-Oh Shin, In-Gyu Jang, \textbf{Dae-Hee Park}, Yong-Hwa Park.\\
+\textit{SPIE Conference on MOEMS and Miniaturized Systems XVIII}, 2019.
+
+\end{itemize}
+
+
+%-------------------------------------------
+% PATENTS
+%-------------------------------------------
+\section{\faFileSignature\ Patents}
+\begin{itemize}[leftmargin=0.25cm]
+
+    \item
+    Electronic device and method of identifying false image of object attributable to reflection in indoor environment thereof.\\
+    \textbf{United States Patent}, Registered, US11282178B2.
+
+    \item 
+    Dispositif électronique et procédé d'identification de fausse image ou de faux objet imputable à la réflexion dans un environnement intérieur correspondant.\\
+    \textbf{European Patent}, Registered, EP3772701.
+
+    \item
+    전자 장치 및 그의 실내 환경에서 반사에 의한 객체 허상을 식별하기 위한 방법.\\
+    \textbf{Korean Patent}, Registered, KR10-2287478-0000.
+
+\end{itemize}
+
+%-------------------------------------------
+% POSITIONS OF RESPONSIBILITY
+%-------------------------------------------
+\section{\faUserTie\ Positions of Responsibility}
+\begin{itemize}[leftmargin=0.25cm]
+    \item Committee Member, R\&D Planning for Culture, Sports and Tourism, Korea Creative Content Agency (KOCCA), 2026
+\end{itemize}
+
+%-------------------------------------------
+% ACHIEVEMENTS
+%-------------------------------------------
+\section{\faTrophy\ Awards}
+\begin{itemize}[leftmargin=0.25cm]
+    \item Winner, NVIDIA Academic Grant Program, NVIDIA, 2025.12
+    \item Winner, Outstanding Doctoral Graduate Award (Alumni Association Award), KAIST ME, 2025.12
+    \item Winner, Qualcomm Innovation Fellowship Korea (QIFK), 2024.12
+    \item Research Scholarship, Samsung Advanced Institute of Technology, 2022.09--2025.02
+    \item 1st Place, Best Paper Awards, IPIU 2022
+    \item Outstanding Achievement Award, Academic Excellence, KAIST Department of Mechanical Engineering, 2016.09
+\end{itemize}
+
+%-------------------------------------------
+% ACADEMIC REVIEWING & SERVICE
+%-------------------------------------------
+\section{\faCheckCircle\ Academic Reviewing \& Service}
+\begin{itemize}[leftmargin=0.35cm]
+
+    \item IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)
+    \item IEEE/CVF International Conference on Computer Vision (ICCV)
+    \item European Conference on Computer Vision (ECCV)
+    \item Conference on Neural Information Processing Systems (NeurIPS)
+    \item International Conference on Learning Representations (ICLR)
+    \item AAAI Conference on Artificial Intelligence (AAAI)
+    \item IEEE International Conference on Robotics and Automation (ICRA)
+    \item IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
+    \item IEEE Intelligent Vehicles Symposium (IV)
+    \item Winter Conference on Applications of Computer Vision (WACV)
+    \item ACM International Conference on Multimedia (ACM MM)
+    \item Pattern Recognition (PR)
+    \item IEEE Transactions on Intelligent Vehicles (T-IV)
+    \item IEEE Robotics and Automation Letters (RA-L)
+    % \item IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
+
+\end{itemize}
+
+\end{document}
